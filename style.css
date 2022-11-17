@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@keyframes background-pan {
+  from {
+    background-position: 0% 0%;
+  }
+  
+  to {
+    background-position: 0% 125%;
+  }
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+  background-image: url("background.png");
+  margin: 0px;
+  animation: background-pan 15s linear infinite;
+}
+
+#title {
+  color: #eee;
+  width: 46vw;
+  margin: 24px 27vw;
+  margin-top: 8vw;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px #111;
+  transition: 350ms ease;
+}
+
+#clock {
+  margin: 0px 35vw;
+  width: 30vw;
+  display: block;
+  
+  color: #eee;
+  font-size: 5vw;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  background-color: #111;
+  border: 0.5vw solid #eee;
+  border-radius: 2vw;
+  transition: 350ms ease;
+}
